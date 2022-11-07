@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<style>
+ul {
+	/*remove doots*/
+  list-style-type: none;
+  	/*move the ul to the toop*/
+  margin: 0;
+	/*makes it alost tuch the sides of the page*/
+  padding: 0;
+  	/*makes it noot leave the made box*/
+  overflow: hidden;
+  	/*gives it a coolor*/
+  background-color: #333;
+ }
+
+ li {
+ 	/*makes it go left and into one line*/
+  float: left;
+  	/*makes ita border so not every thing touches*/
+  border-right:1px solid #bbb;
+}
+li:last-child {
+  border-right: none;
+}
+li a {
+	/*display block*/
+  display: block;
+  	/*color white*/
+  color: white;
+  	/*makes it on the center of the box it is in*/
+  text-align: center;
+  	/*makes ita border so not every thing touches*/
+  padding: 14px 16px;
+  	/*removws underline*/
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	/*when hovering makes it change background color*/
+  background-color: #111;
+}
+
+.active {
+	/*gives the class this back color*/
+  background-color: #04AA6D;
+}
+
+</style>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a href="#about">About</a></li>
+</ul>
+
+
+</body>
+</html>
