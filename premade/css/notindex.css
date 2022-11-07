@@ -1,0 +1,89 @@
+/*nav*/
+ul {
+	/*remove doots*/
+  list-style-type: none;
+  	/*move the ul to the toop*/
+  margin: 0;
+	/*makes it alost tuch the sides of the page*/
+  padding: 0;
+  	/*makes it noot leave the made box*/
+  overflow: hidden;
+  	/*gives it a coolor*/
+  background-color: #333;
+}
+
+li {
+ 	/*makes it go left and into one line*/
+  float: left;
+  	/*makes ita border so not every thing touches*/
+  border-right:1px solid #bbb;
+}
+li:last-child {
+  border-right: none;
+}
+li a {
+	/*display block*/
+  display: block;
+  	/*color white*/
+  color: white;
+  	/*makes it on the center of the box it is in*/
+  text-align: center;
+  	/*makes ita border so not every thing touches*/
+  padding: 14px 16px;
+  	/*removws underline*/
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	/*when hovering makes it change background color*/
+  background-color: #111;
+}
+
+.active {
+	/*gives the class this back color*/
+  background-color: #04AA6D;
+}
+
+/*grids*/
+
+/*clas declering*/
+.grid-container {
+	/*makes it folow grid laws*/
+  display: grid;
+  	/*makes everything the same size*/
+  grid-template-columns: auto auto auto;
+  	/*makes gap betwn elements*/
+  gap: 10px;
+  /*makes a backround color*/
+  background-color: #2196F3;
+  	/*Padding is used to create space around an element's content, inside of any defined borders.*/
+  padding: 30px;
+}
+	/*makes this find child elimwent of this clas*/
+.grid-container > div {
+	/*new color*/
+  background-color: rgba(255, 255, 255, 0.8);
+  	/*makes things align center*/
+  text-align: center;
+    	/*Padding is used to create space around an element's content, inside of any defined borders.*/
+  padding: 20px 0;
+  	/*changes font size*/
+  font-size: 30px;
+}
+
+.item1 {
+	/*top to botom*/
+  grid-row-start: 1;
+  grid-row-end: 3;
+  	/*opisite*/
+  /*grid-column-start:1;
+  grid-column-end:3;*/
+
+}
+.item5{
+    	/*top to botom*/
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start:3;
+  grid-column-end:3;
+}
